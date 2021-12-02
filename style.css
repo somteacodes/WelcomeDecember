@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.welcome {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+
+animation:appear 1.0s ease-in-out forwards;
+}
+/* SVG */
+
+/* 0 is 525.715087890625
+index.js:5 1 is 495.60003662109375
+index.js:5 2 is 503.2793884277344
+index.js:5 3 is 495.60003662109375
+index.js:5 4 is 760.64013671875
+index.js:5 5 is 549.3065795898438
+index.js:5 6 is 495.599853515625
+index.js:5 7 is 540.1131591796875 */
+
+#december path:nth-child(1) {
+  stroke-dasharray: 525.715087890625px;
+  stroke-dashoffset: 525.715087890625px;
+  animation: logo-in 1.5s ease-in-out forwards, fill-in 0.5s ease-in-out forwards 1.0s;
+}
+#december path:nth-child(2) {
+  stroke-dasharray: 495.60003662109375px;
+  stroke-dashoffset: 495.60003662109375px;
+  animation: logo-in 1.5s ease-in-out forwards 0.2s, fill-in 0.5s ease-in-out forwards 1.2s;
+}
+#december path:nth-child(3) {
+  stroke-dasharray: 503.2793884277344px;
+  stroke-dashoffset: 503.2793884277344px;
+  animation: logo-in 1.5s ease-in-out forwards 0.4s, fill-in 0.5s ease-in-out forwards 1.4s;
+}
+#december path:nth-child(4) {
+  stroke-dasharray: 495.60003662109375px;
+  stroke-dashoffset: 495.60003662109375px;
+  animation: logo-in 1.5s ease-in-out forwards 0.6s, fill-in 0.5s ease-in-out forwards 1.6s;
+}
+#december path:nth-child(5) {
+  stroke-dasharray: 760.64013671875px;
+  stroke-dashoffset: 760.64013671875px;
+  animation: logo-in 1.5s ease-in-out forwards 0.8s, fill-in 0.5s ease-in-out forwards 1.8s;
+}
+#december path:nth-child(6) {
+  stroke-dasharray: 549.3065795898438px;
+  stroke-dashoffset: 549.3065795898438px;
+  animation: logo-in 1.5s ease-in-out forwards 1.0s, fill-in 0.5s ease-in-out forwards 2.0s;
+}
+#december path:nth-child(7) {
+  stroke-dasharray: 495.599853515625px;
+  stroke-dashoffset: 495.599853515625px;
+  animation: logo-in 1.5s ease-in-out forwards 1.2s, fill-in 0.5s ease-in-out forwards 2.2s;
+}
+#december path:nth-child(8) {
+  stroke-dasharray: 540.1131591796875px;
+  stroke-dashoffset: 540.1131591796875px;
+  animation: logo-in 1.5s ease-in-out forwards 1.4s, fill-in 0.5s ease-in-out forwards 2.4s;
+}
+
+
+/* keyframes animations */
+
+@keyframes appear{
+    from{color:transparent}
+}
+
+@keyframes logo-in{
+    to{
+        stroke-dashoffset: 0%;
+    }
+}
+
+@keyframes fill-in {
+    from{
+        fill:transparent;
+    }
+    to{
+        fill:yellow;
+    }
+}
